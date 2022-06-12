@@ -1,0 +1,9 @@
+<?php
+$config = [
+    'db' => [
+        'host' => 'mysql',
+        'user' => '',
+        'pass' => '',
+        'database' => 'mapgenerator',
+    ],
+];

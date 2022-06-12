@@ -1,0 +1,638 @@
+body{
+    background-color:#000;
+    color:#fff;
+    font-family:arial;
+    overflow-x:auto;
+    overflow-y:auto;
+    padding:0px;
+    margin:0px;
+}
+
+p{
+    margin:0px;
+}
+
+table{
+    border-collapse:collapse;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+td{
+    border:none;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+}
+
+.centralBody{
+    font-size:25px;
+    position:fixed;
+    width:500px;
+    margin-left:50%;
+    left:-250px;
+    margin-top:150px;
+    background-color:rgba(50,150,0,1);
+    border:1px solid #fff;
+    border-radius:10px;
+    padding:10px;
+}
+
+#chat{
+	max-height:500px;
+	overflow-y:auto;
+}
+
+#maps{
+	max-height:500px;
+	overflow-y:auto;
+}
+
+.chatMessage{
+	margin-bottom:0px;
+}
+
+.message{
+	font-size:15px;
+}
+
+.messageDetails{
+	color:#7800ff;
+	font-weight:bold;
+}
+
+#mainMenu{
+	width:200px;
+	margin:auto;
+}
+
+.mainButton{
+	border:none;
+	border-radius:5px;
+	background-color:#fff;
+	color:#000;
+	font-size:20px;
+	font-family:arial;
+	font-weight:bold;
+	padding:10px;
+	width:200px;
+	outline:0;
+	margin-bottom:20px;
+}
+
+.mainButton:hover{
+	background-color:#eee;
+}
+
+.mainButton:active{
+	background-color:#ccc;
+}
+
+.homeButton{
+	width:30px;
+	height:30px;
+	border:none;
+	border-radius:5px;
+	background-color:#fff;
+	font-size:16px;
+	float:right;
+	outline:0;
+}
+
+.homeButton:hover{
+	background-color:#eee;
+}
+
+.homeButton:active{
+	background-color:#ccc;
+}
+
+.mapItem{
+	background-color:#3aaf00;
+	margin-bottom:5px;
+	padding:5px 40px;
+	border-radius:5px;
+	min-height:50px;
+	cursor:pointer;
+}
+
+.mapTitle{
+	text-align:left;
+}
+
+.mapDetails{
+	margin:0px;
+	width:100%;
+}
+
+.creatorTitle{
+	font-size:15px;
+	width:30%;
+	text-align:left;
+}
+
+.mapType{
+	font-size:15px;
+	width:30%;
+	text-align:right;
+}
+
+.mapDimensions{
+	font-size:15px;
+	width:30%;
+}
+
+.tileForm{
+	margin:0px;
+	padding:0px;
+	min-height:100%;
+}
+
+.tileCoordinate{
+	margin:0px;
+	padding:0px;
+	border:none;
+	display:none;
+}
+
+.hiddenTile{
+	width:100%;
+	min-height:100%;
+	padding:0px;
+	margin:0px;
+	border:none;
+	outline:0;
+	background-image:url(images/tiles/hidden.svg);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.formInput{
+    width:300px;
+    margin:0px;
+    position:relative;
+    margin-left:50%;
+    left:-150px;
+    font-size:20px;
+	outline:0;
+}
+
+.coordinateBox{
+    border-radius:5px;
+    font-weight:bold;
+    font-size:16px;
+    border:none;
+    outline:0;
+    margin-top:5px;
+    margin-left:23px;
+    height:35px;
+    width:40px;
+    padding:5px;
+}
+
+#messageInput{
+	width:380px;
+}
+
+#mapIDInput{
+	width:80px;
+}
+
+#mapIDDeleteInput{
+	width:80px;
+}
+
+#mapLoadSettings{
+	display:inline-block;
+}
+
+#mapDelete{
+	display:inline-block;
+}
+
+#mapTypeBox{
+    height:35px;
+    border:none;
+    border-radius:5px;
+    padding:5px;
+	margin-top:5px;
+    margin-left:23px;
+	font-size:16px;
+	outline:0;
+}
+
+.formTextBox{
+	border-radius:5px;
+	font-weight:bold;
+	font-size:16px;
+	border:none;
+	outline:0;
+	margin-bottom:5px;
+	height:35px;
+	width:300px;
+	padding:5px;
+}
+
+.formTextArea{
+	border-radius:5px;
+	font-weight:bold;
+	font-size:16px;
+	border:none;
+	outline:0;
+	margin-bottom:5px;
+	padding:5px;
+	font-family:arial;
+}
+
+.passwordShowHideButton{
+	width:35px;
+	height:35px;
+	border-radius:5px;
+	border:none;
+	outline:0;
+	font-size:16px;
+	background-color:#fff;
+	position:relative;
+	top:-40px;
+	left:265px;
+}
+
+.iconRadio{
+	margin:0px;
+	margin-bottom:5px;
+}
+
+#customMapBox{
+	margin-top:10px;
+}
+
+.customValueBox{
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+    border:none;
+    outline:0;
+	margin:5px 6px 10px 15px;
+    height:35px;
+    width:20px;
+    padding:5px;
+}
+
+#radioButtons{
+	width:50%;
+	margin:auto;
+}
+
+.submitButton{
+    border:none;
+    font-weight:bold;
+    font-family:arial;
+    font-size:16px;
+    background-color:#fff;
+    color:#0f0;
+    position:relative;
+    margin-left:50%;
+    width:60px;
+    left:-30px;
+    border-radius:5px;
+    height:35px;
+    outline:0;
+    margin-top:10px;
+    padding:0px 15px;
+}
+
+.submitButton:hover{
+	background-color:#eee;
+}
+
+.submitButton:active{
+	background-color:#ccc;	
+}
+
+#messageSend{
+	margin-left:30px;
+}
+
+#messageBox{
+	width:750px;
+	color:#7800ff;
+	font-size:40px;
+	position:fixed;
+	margin-left:50%;
+	left:-375px;
+	margin-top:75px;
+	text-align:center;
+	z-index:10;
+	border-radius:10px;
+}
+
+.subtitle{
+    font-weight:bold;
+}
+
+.detail{
+    font-size:15px;
+}
+
+#returnButton{
+    position:fixed;
+    top:10px;
+    right:20px;
+    z-index:10;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:16px;
+    background-color:#fff;
+    color:#f00;
+    height:30px;
+	width:30px;
+    outline:0;
+}
+
+#returnButton:hover{
+    background-color:#eee;
+}
+
+#returnButton:active{
+    background-color:#ccc;
+}
+
+#deleteMapButton{
+	float:right;
+	margin-top:-25px;
+    z-index:10;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:16px;
+    background-color:#fff;
+    color:#f00;
+    height:30px;
+	width:30px;
+    outline:0;
+}
+
+#deleteMapButton:hover{
+    background-color:#eee;
+}
+
+#deleteMapButton:active{
+    background-color:#ccc;
+}
+
+#uploadButton{
+	margin:0px;
+	position:fixed;
+	top:10px;
+	right:155px;
+	z-index:10;
+	border:none;
+	border-radius:5px;
+	font-weight:bold;
+	font-size:16px;
+	background-color:#fff;
+	height:30px;
+	width:30px;
+	outline:0;
+}
+
+#uploadButton:hover{
+	background-color:#eee;
+}
+
+#uploadButton:active{
+	background-color:#ccc;
+}
+
+#menuBar{
+    height:50px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color:rgba(50,150,0,1);
+}
+
+.title{
+    font-size:50px;
+    text-align:center;
+    font-weight:bold;
+    width:400px;
+    position:fixed;
+    margin-left:50%;
+    left:-200px;
+    background-color:rgba(123,123,123,0);
+    z-index:10;
+}
+
+.formInputTitle{
+	font-size:15px;
+}
+
+#textBox{
+    position:fixed;
+    top:15px;
+    left:10px;
+}
+
+.menuItem{
+    background-color:#fff;
+    color:#000;
+    width:150px;
+    height:30px;
+    margin-top:10px;
+    margin-left:20px;
+    border-radius:5px;
+    display:inline-block;
+    font-size:16px;
+}
+
+#zoomItem{
+	width:65px;
+	display:block;
+	position:fixed;
+	top:10px;
+	right:70px;
+	margin:0px;
+}
+
+#timeTakenBox{
+    width:auto;
+    padding-right:10px;
+}
+
+#userInformation{
+	position:fixed;
+	font-size:50px;
+	left:20px;
+	bottom:10px;
+	color:#7800ff;
+}
+
+#feedbackTable{
+	width:450px;;
+}
+
+.tableHeader{
+	font-size:20px;
+	font-weight:bold;
+	border-bottom:1px solid #fff;
+}
+
+.tableRow{
+	border-top:1px solid #fff;
+}
+
+#usernameColumn{
+	width:135px;
+}
+
+#messageColumn{
+	width:315px;
+	text-align:left;
+	display:block;
+	overflow-x:auto;
+}
+
+#usersTable{
+	width:450px;
+}
+
+#userIDColumn{
+	width:90px;
+}
+
+#usersUsernameColumn{
+	width:135px;
+}
+
+#emailColumn{
+	width:225px;
+}
+
+.menuItemTitle{
+    display:inline-block;
+    margin-top:5px;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+.zoomButton{
+    width:30px;
+    height:30px;
+    color:#000;
+    background-color:#fff;
+    font-size:13px;
+    border:none;
+    margin:0px;
+    outline:0;
+    font-weight:bold;
+    padding:0px;
+    border-radius:5px;
+}
+
+.zoomButton:hover{
+    background-color:#eee;
+}
+
+.zoomButton:active{
+    background-color:#ccc;
+}
+
+#creditBox{
+	padding:0px 50px;
+}
+
+.nameCredit{
+	float:right;
+}
+
+.grass1{
+    background-image:url('images/tiles/grass1.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.grass2{
+    background-image:url('images/tiles/grass2.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.grass3{
+    background-image:url('images/tiles/grass3.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.stone1{
+    background-image:url('images/tiles/stone1.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.stone2{
+    background-image:url('images/tiles/stone2.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.forest1{
+    background-image:url('images/tiles/forest1.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.forest2{
+    background-image:url('images/tiles/forest2.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.forest3{
+    background-image:url('images/tiles/forest3.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.mountain{
+    background-image:url('images/tiles/mountain.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.waterShallow{
+    background-image:url('images/tiles/water1.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.waterDeep1{
+    background-image:url('images/tiles/water2.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.waterDeep2{
+    background-image:url('images/tiles/water3.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.waterDeep3{
+    background-image:url('images/tiles/water4.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.waterDeep4{
+    background-image:url('images/tiles/water5.svg');
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.error{
+    background-color:#f00;
+}
